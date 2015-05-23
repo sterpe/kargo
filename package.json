@@ -1,0 +1,27 @@
+{
+  "name": "payload",
+  "version": "0.1.0",
+  "description": "a flux payload object.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest-cli": "^0.4.5"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Steven Terpe <srterpe@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sterpe/payload.git"
+  },
+  "keywords": [
+    "flux",
+    "payload"
+  ],
+  "bugs": {
+    "url": "https://github.com/sterpe/payload/issues"
+  },
+  "homepage": "https://github.com/sterpe/payload"
+}
