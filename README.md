@@ -1,10 +1,9 @@
 # payload
 
-```javascript
+```
 var Payload = require('payload').Payload
+, payload = new Payload('FOO', 'a', 'b', 1, 2)
 ;
-
-var payload = new Payload('FOO', 'a', 'b', 1, 2);
 
 /*
  * {
