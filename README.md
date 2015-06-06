@@ -16,7 +16,7 @@ var Payload = require('kargo').Payload
  */
 ```
 
-dispatcher.register(function (payload) {
+dispatcher.register(someStore.onDispatch = function (payload) {
 	switch (payload.actionType) {
 	case "FOO":
 		payload.apply(someStore, someStore.someFunction);
