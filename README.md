@@ -1,6 +1,6 @@
 # kargo
 
-```
+```javascript
 var Payload = require('kargo').Payload
 , payload = new Payload('FOO', 'a', 'b', 1, 2)
 ;
