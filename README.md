@@ -14,7 +14,6 @@ var Payload = require('kargo').Payload
  * }
  *
  */
-```
 
 dispatcher.register(someStore.onDispatch = function (payload) {
 	switch (payload.actionType) {
@@ -27,3 +26,4 @@ dispatcher.register(someStore.onDispatch = function (payload) {
 
 	// emit `change`, maybe ?
 });
+```
