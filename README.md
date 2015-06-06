@@ -1,7 +1,7 @@
-# payload
+# kargo
 
 ```
-var Payload = require('payload').Payload
+var Payload = require('kargo').Payload
 , payload = new Payload('FOO', 'a', 'b', 1, 2)
 ;
 
@@ -10,7 +10,20 @@ var Payload = require('payload').Payload
  * 	type: "FOO"
  *	, actionType: "FOO"
  *	, arguments: ['a', 'b', 1, 2]
+ * 	, apply: function (func, thisArg) {}
  * }
  *
  */
 ```
+
+dispatcher.register(function (payload) {
+	switch (payload.actionType) {
+	case "FOO":
+		payload.apply(someStore, someStore.someFunction);
+		break;
+	default:
+		return;
+	}
+
+	// emit `change`, maybe ?
+});

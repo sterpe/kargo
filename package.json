@@ -1,5 +1,5 @@
 {
-  "name": "payload",
+  "name": "kargo",
   "version": "0.3.0",
   "description": "a flux payload object.",
   "main": "index.js",
@@ -12,16 +12,18 @@
   },
   "author": "Steven Terpe <srterpe@gmail.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sterpe/payload.git"
-  },
   "keywords": [
     "flux",
-    "payload"
+    "react",
+    "payload",
+    "kargo"
   ],
-  "bugs": {
-    "url": "https://github.com/sterpe/payload/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sterpe/kargo.git"
   },
-  "homepage": "https://github.com/sterpe/payload"
+  "bugs": {
+    "url": "https://github.com/sterpe/kargo/issues"
+  },
+  "homepage": "https://github.com/sterpe/kargo"
 }
