@@ -11,6 +11,20 @@ describe('Payload', function () {
 			expect(payload.actionType).toBe('foo');
 			expect(payload.arguments).toEqual(['a', 'b', 1, 2]);
 	});
+	it('correctly applies the argument to a function with thisArg'
+		, function () {
+			var Payload = require('../lib/payload').Payload
+			, payload = new Payload('foo', 'a', 'b', 1, 2)
+			, mock
+			;
+
+			mock = {
+				fn: jest.genMockFunction()
+			};
+			mock.fn.apply = jest.genMockFunction();
+			payload.apply(mock, mock.fn);
+			expect(mock.fn.apply).toBeCalledWith(mock, payload.arguments);
+	});
 	it('returns an object with correct type, actiontype, and arguments properties when arguments are none'
 		, function () {
 			var Payload = require('../lib/payload').Payload
