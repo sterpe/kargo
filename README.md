@@ -10,7 +10,7 @@ var Payload = require('kargo').Payload
  * 	type: "FOO"
  *	, actionType: "FOO"
  *	, arguments: ['a', 'b', 1, 2]
- * 	, apply: function (func, thisArg) {}
+ * 	, apply: function (thisArg, func) {}
  * }
  *
  */
